@@ -1,0 +1,27 @@
+doctype
+html(lang="ko")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="initial-scale=1, width=device-width")
+    title 지도 좌표를 찍자
+    link(rel="stylesheet" href="css/style.css")
+  body
+    h2 
+    .clearfix
+      p
+        input(type="text" id="search" placeholder="장소 입력")
+        button(type="button" class="search") 검색
+      p
+        input(type="checkbox" id='roadview' onclick="setOverlayMapTypeId('roadview')")
+        strong 로드뷰 보기
+    #map
+    #result
+      p
+        |지도를 클릭하면 해당 부분의 위도와 경도 정보를 볼 수 있습니다.
+        br
+        |노란 마커를 클릭하면 동, 도로명 주소, 위도와 경도 정보를 볼 수 있습니다.
+        br
+        |지도, 마커를 우클릭하면 해당 위치 위도, 경도로 검색한 카카오 맵 결과를 볼 수 있습니다.
+    //- script(src=`//dapi.kakao.com/v2/maps/sdk.js?appkey=${key}`)
+    script(src=`//dapi.kakao.com/v2/maps/sdk.js?appkey=${key}&libraries=services,drawing`)
+    script(src="js/loadMap.js")

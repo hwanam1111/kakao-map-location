@@ -1,0 +1,12 @@
+doctype
+html
+  head
+    meta(charset='utf-8')
+    title='Upload Page'
+    meta(name='viewport' content='initial-scale=1, width=device-width')
+    link(rel='stylesheet' href='css/upload-style.css')
+  body
+    div
+      form(method='post' enctype='multipart/form-data' action='/upload-page')
+        input(type='file' name='excel')
+        input(type='submit')

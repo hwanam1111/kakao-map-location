@@ -1,0 +1,9 @@
+node_modules
+sessions
+auth.js
+key.js
+~$map.xlsx
+map.xlsx
+public/latlng.json
+public/multi-latlng.json
+package-lock.json
